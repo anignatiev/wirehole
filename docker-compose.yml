@@ -47,7 +47,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Minsk # Change to your timezone
+      - TZ=Europe/Berlin # Change to your timezone
       - SERVERPORT=51820
       #- SERVERURL=my.ddns.net #optional - For use with DDNS (Uncomment to use)
       - PEERS=10 # How many peers to generate for you (clients)
