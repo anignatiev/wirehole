@@ -80,7 +80,7 @@ services:
       - 127.0.0.1
       - 10.2.0.200 # Points to unbound
     environment:
-      TZ: "Europe/Minsk"
+      TZ: "Europe/Berlin"
       WEBPASSWORD: "" # Blank password - Can be whatever you want.
       ServerIP: 10.2.0.100 # Internal IP of pihole
       DNS1: 10.2.0.200 # Unbound IP
