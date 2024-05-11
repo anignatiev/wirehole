@@ -10,6 +10,15 @@ volumes:
   portainer_data:
 
 services:
+  watchtower:
+    image: containrrr/watchtower
+    environment:
+      - TZ=Europe/Berlin
+      - WATCHTOWER_SCHEDULE=0 0 1 * * *
+      - WATCHTOWER_CLEANUP=true
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  
   portainer:
     image: portainer/portainer-ce:latest
     container_name: portainer
